@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" prefHeight="370.0" prefWidth="532.0" vgap="10" xmlns="http://javafx.com/javafx/null" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Pane prefHeight="373.0" prefWidth="532.0">
+         <children>
+            <Label layoutX="176.0" layoutY="6.0" prefHeight="35.0" prefWidth="114.0" text="Žodynėlis">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="textImput" layoutX="41.0" layoutY="62.0" prefHeight="44.0" prefWidth="194.0" />
+
+            <Button layoutX="364.0" layoutY="58.0" mnemonicParsing="false" onAction="#translate" prefHeight="44.0" prefWidth="84.0" text="Versti" />
+            <RadioButton layoutX="251.0" layoutY="62.0" mnemonicParsing="false" text="EN">
+               <toggleGroup>
+                  <ToggleGroup fx:id="locale" />
+               </toggleGroup></RadioButton>
+            <RadioButton layoutX="250.0" layoutY="89.0" mnemonicParsing="false" text="LT" toggleGroup="$locale" />
+            <TextArea fx:id="response" layoutX="41.0" layoutY="123.0" prefHeight="200.0" prefWidth="411.0" />
+           </children>
+      </Pane>
+   </children>
+</GridPane>

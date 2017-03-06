@@ -1,0 +1,4 @@
+new-naujas
+old-senas
+get-gauti
+set-nustatyti
